@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="966" y="-646"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="OFe-vf-RDc">
             <objects>
-                <viewController id="lbG-yw-qVu" sceneMemberID="viewController">
+                <viewController id="lbG-yw-qVu" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4cN-3k-kA4"/>
                         <viewControllerLayoutGuide type="bottom" id="1xW-Zd-7Ln"/>
@@ -59,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENm-yf-syv">
-                                <rect key="frame" x="16" y="28" width="343" height="278"/>
+                                <rect key="frame" x="16" y="72" width="343" height="278"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ENm-yf-syv" secondAttribute="height" multiplier="343:278" id="2v3-3N-FZs"/>
                                 </constraints>
@@ -68,7 +68,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family of Photos!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nL-32-XjT">
-                                <rect key="frame" x="16" y="336" width="343" height="52"/>
+                                <rect key="frame" x="16" y="380" width="343" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="ElL-3G-p7b"/>
                                 </constraints>
@@ -87,6 +87,10 @@
                             <constraint firstItem="3nL-32-XjT" firstAttribute="leading" secondItem="kXy-Vh-bw0" secondAttribute="leadingMargin" id="urI-hT-pYH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="3nL-32-XjT" id="myi-zm-klJ"/>
+                        <outlet property="emojiLabel" destination="ENm-yf-syv" id="3GB-VB-zDe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8m6-fb-R5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
